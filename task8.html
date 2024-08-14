@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Forms in HTML</title>
+    </head>
+    <body>
+        <center>
+            <form action="text.txt" method="get">
+                <pre>
+                <fieldset>
+                    <h2>I'm going to join at 10k coders &#128682; and I wanna become a Developer &#128187</h2>
+                    <legend>Register here</legend>
+                    <div style="background-color: cornflowerblue;">
+                        <label for="fullName">Enter Name:</label>
+                        <input type="text" placeholder="Enter your name" id="fullName" pattern="[A-Za-z]{4,}" required>
+                    </div>
+
+                    <div style="background-color: coral;">
+                        <label for="pswd">Enter Password:</label>
+                        <input type="password" placeholder="Enter password" id="pswd" pattern="[a-zA-Z0-9]{3,}" required>
+                    </div>
+
+                    <div style="background-color: cornflowerblue;">
+                        <label for="Email">Email:</label>
+                        <input type="text" placeholder="Enter email" id="email" pattern="[a-z0-9]+@[a-z]+\.[a-z]{,}" required>
+                    </div>
+
+                    <div style="background-color: coral;">
+                        <label for="Education">Education:</label>
+                        <input type="text" placeholder="Choose from below" list="Degree type" required>
+                        <datalist id="Degree type">
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="B.Sc">B.Sc</option>
+                            <option value="MCA">MCA</option>
+                            <Option value="MBA">MBA</Option>
+                        </datalist>
+                    </div>
+                    <div style="background-color: darkorchid;">
+                        <label for="Year of passed out">Year of passed out:</label>
+                        <input type="text" placeholder="Choose from below" list="year" required>
+                        <datalist id="year">
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </datalist>
+                    </div>
+                    <div style="background-color: cadetblue;">
+                        <label for="Location">Location:</label>
+                        <input type="text" list="id" required>
+                        <datalist id="id">
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Banglore" selected>Banglore</option>
+                            <option value="Chennai" disabled>Chennai</option>
+                            <option value="Kurnool">Kurnool</option>
+                            <option value="Nandyal">Nandyal</option>
+                        </datalist>
+                    </div>
+                    <div style="background-color: darkorchid;">
+                        <label for="course" >Choose your course:</label>
+                        <input type="text" list="course" required>
+                        <datalist id="course">
+                            <option value="Frontend Developer">Frontend Developer</option>
+                            <option value="Java FullStack">Java FullStack</option>
+                            <option value="AWS">AWS</option>
+                            <option value="Python FullStack">Python FullStack</option>
+                            <option value="React Developer">React Developer</option>
+                        </datalist>
+                    </div>
+                    <div style="background-color: cadetblue;">
+                        <label for="Number">Phone Number:</label>
+                        <input type="tel" id="number" required/>
+                    </div>
+                    <div style="background-color: cyan;">
+                        <label for="files"></label>
+                        <input type="file" id="files" multiple>
+                    </div>
+                    <div style="background-color: crimson;">
+                        <input type="radio" id="Male" name="Male"/>
+                        <label for="Male">Male</label>
+                        <input type="radio" name="Female" id="Female">
+                        <label for="Female">Female</label>
+                    </div>
+                    <div style="background-color: crimson;">
+                        <label for="check"></label>
+                        <input type="checkbox" id="check" required>"I agree to the" <a href>terms</a> & <a href>conditions</a>
+                    </div>
+                        <textarea rows="5" cols="50"></textarea>            
+                        <button type="submit">submit</button>  
+                </fieldset>
+                </pre>
+            </form>
+        </center>
+    </body>
+</html>
